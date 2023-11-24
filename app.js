@@ -1,4 +1,4 @@
-const userEntersAction = prompt ('Введите действие которое хотите сделать ( - , + ,* , / )');
+const userEntersAction = prompt ('Введите действие которое хотите сделать ( sub , add ,mult , div )');
 const numberOne = +prompt ('Введите первое число');
 const numberTwo = +prompt ('Введите второе число');
 const mult = `*`
