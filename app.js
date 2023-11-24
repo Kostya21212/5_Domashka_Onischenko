@@ -1,10 +1,8 @@
 const userEntersAction = prompt ('Введите действие которое хотите сделать ( - , + ,* , / )');
 const numberOne = +prompt ('Введите первое число');
 const numberTwo = +prompt ('Введите второе число');
- const add = `+`;
-// const mult = `*`;
-// const sub = `-`
-// const div = `/`
+const mult = `*`
+ 
 // const action = add || mult || sub || div;
 let resultAdd = numberOne + numberTwo
 let resultDiv = numberOne / numberTwo
@@ -12,19 +10,19 @@ let resultSub = numberOne - numberTwo
 let resultMult = numberOne * numberTwo
 
 switch (userEntersAction){
-    case '*':
-        alert(`${numberOne} ${userEntersAction} ${numberTwo} = ${resultMult}`
+    case'mult':
+        alert(`${numberOne} * ${numberTwo} = ${resultMult}`
         )
         break
-    case '/':
-        alert(`${numberOne} ${userEntersAction} ${numberTwo} = ${resultDiv}`)
+    case 'div':
+        alert(`${numberOne} / ${numberTwo} = ${resultDiv}`)
         break
-    case '-':
-        alert(`${numberOne} ${userEntersAction} ${numberTwo} = ${resultSub}`
+    case 'sub':
+        alert(`${numberOne} - ${numberTwo} = ${resultSub}`
         )
         break
-    case '+':
-        alert(`${numberOne} ${userEntersAction} ${numberTwo} = ${resultAdd}`)
+    case 'add':
+        alert(`${numberOne} + ${numberTwo} = ${resultAdd}`)
         break
 }
 console.log(`${userEntersAction}`)
